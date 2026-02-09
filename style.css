@@ -1,0 +1,4 @@
+/* Just making scrollbar small – beginner friendly */
+.messages::-webkit-scrollbar {
+    width: 5px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Chat UI (Tailwind)</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100 flex justify-center items-center h-screen">
+
+    <div class="chat-box w-80 bg-white rounded-xl shadow-lg">
+
+        <!-- Header -->
+        <h2 class="text-center bg-blue-500 text-white py-3 text-lg font-bold rounded-t-xl">
+            Chat UI
+        </h2>
+
+        <!-- Messages Area -->
+        <div class="p-3 space-y-3 h-80 overflow-y-auto bg-gray-200">
+
+            <!-- Received -->
+            <p class="bg-white p-2 rounded-lg max-w-[70%]">
+                Hello!
+            </p>
+
+            <!-- Sent -->
+            <p class="bg-blue-500 text-white p-2 rounded-lg max-w-[70%] ml-auto">
+                Hi! How are you?
+            </p>
+
+            <!-- Received -->
+            <p class="bg-white p-2 rounded-lg max-w-[70%]">
+                I’m good.
+            </p>
+
+        </div>
+
+        <!-- Input Area -->
+        <div class="flex p-2 space-x-2 bg-white border-t">
+            <input 
+                type="text"
+                class="flex-1 border p-2 rounded outline-none"
+                placeholder="Type...">
+            
+            <button class="bg-blue-500 text-white px-4 py-2 rounded">
+                Send
+            </button>
+        </div>
+
+    </div>
+
+</body>
+</html>
